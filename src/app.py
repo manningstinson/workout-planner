@@ -1,32 +1,19 @@
+# app.py
+
 from flask import Flask, render_template, request, redirect, url_for
 import sqlite3
+from database_config import DB_CONFIG  # Import database configuration
 
 app = Flask(__name__)
 
 # Function to create a connection to the SQLite database
-def create_connection(db_file):
+def create_connection():
     conn = None
     try:
-        conn = sqlite3.connect(db_file)
+        conn = sqlite3.connect(DB_CONFIG['database'])
     except sqlite3.Error as e:
         print(e)
     return conn
-
-# Function to create the exercises table if not exists
-def create_table(conn):
-    create_table_sql = """
-    CREATE TABLE IF NOT EXISTS exercises (
-        id INTEGER PRIMARY KEY,
-        name TEXT NOT NULL,
-        difficulty TEXT NOT NULL,
-        type TEXT NOT NULL
-    );
-    """
-    try:
-        c = conn.cursor()
-        c.execute(create_table_sql)
-    except sqlite3.Error as e:
-        print(e)
 
 # Route to display the form
 @app.route('/')
@@ -40,11 +27,10 @@ def add_exercise():
     difficulty = request.form['ex_difficulty']
     ex_type = request.form['ex_type']
 
-    conn = create_connection('exercises.db')
+    conn = create_connection()
     with conn:
-        create_table(conn)
         cur = conn.cursor()
-        cur.execute("INSERT INTO exercises (name, difficulty, type) VALUES (?, ?, ?)", (name, difficulty, ex_type))
+        cur.execute("INSERT INTO exercises (ex_name, ex_difficulty, ex_type) VALUES (?, ?, ?)", (name, difficulty, ex_type))
         conn.commit()
 
     return redirect(url_for('index'))
