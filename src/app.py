@@ -33,4 +33,4 @@ def add_exercise():
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    app.run(debug=Trerted
+    app.run(debug=True)
