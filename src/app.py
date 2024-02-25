@@ -10,12 +10,13 @@ def create_connection():
     try:
         conn = mysql.connector.connect(**DB_CONFIG['url'])
     except mysql.connector.Error as e:
-        print(e)
+        print("Error connecting to the database:", e)
     return conn
 
 # Route to display the form
 @app.route('/')
 def index():
+    print("Rendering index.html")
     return render_template('index.html')
 
 # Route to handle form submission
@@ -25,13 +26,20 @@ def add_exercise():
     difficulty = request.form['ex_difficulty']
     ex_type = request.form['ex_type']
 
+    print("Received form data:", ex_name, ex_difficulty, ex_type)
+
     conn = create_connection()
     with conn:
         cur = conn.cursor()
-        cur.execute("INSERT INTO exercise (ex_name, ex_difficulty, ex_type) VALUES (%s, %s, %s)", (name, difficulty, ex_type))
-        conn.commit()
+        try:
+            cur.execute("INSERT INTO exercise (ex_name, ex_difficulty, ex_type) VALUES (%s, %s, %s)", (name, difficulty, ex_type))
+            conn.commit()
+            print("Exercise added to the database successfully")
+        except mysql.connector.Error as e:
+            print("Error adding exercise to the database:", e)
 
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
+    print("Starting Flask application...")
     app.run(debug=True)
