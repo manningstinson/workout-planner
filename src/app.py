@@ -1,17 +1,15 @@
-# app.py
-
+import mysql.connector
 from flask import Flask, render_template, request, redirect, url_for
-import sqlite3
 from database_config import DB_CONFIG  # Import database configuration
 
 app = Flask(__name__)
 
-# Function to create a connection to the SQLite database
+# Function to create a connection to the MySQL database
 def create_connection():
     conn = None
     try:
-        conn = sqlite3.connect(DB_CONFIG['database'])
-    except sqlite3.Error as e:
+        conn = mysql.connector.connect(**DB_CONFIG['url'])
+    except mysql.connector.Error as e:
         print(e)
     return conn
 
@@ -30,7 +28,7 @@ def add_exercise():
     conn = create_connection()
     with conn:
         cur = conn.cursor()
-        cur.execute("INSERT INTO exercises (ex_name, ex_difficulty, ex_type) VALUES (?, ?, ?)", (name, difficulty, ex_type))
+        cur.execute("INSERT INTO exercise (ex_name, ex_difficulty, ex_type) VALUES (%s, %s, %s)", (name, difficulty, ex_type))
         conn.commit()
 
     return redirect(url_for('index'))
