@@ -4,4 +4,4 @@ database_config.py
 Workout Planner | Digital Ocean.session.sql
 ca-certificate.crt
 */__pycache__
-*/.vscode
+.vscode/
