@@ -1,20 +1,4 @@
 {
-	"sqltools.connections": [
-		{
-			"mysqlOptions": {
-				"authProtocol": "default",
-				"enableSsl": "Enabled",
-				"ssl": {}
-			},
-			"previewLimit": 50,
-			"server": "db-mysql-nyc3-35936-do-user-15450315-0.c.db.ondigitalocean.com",
-			"driver": "MySQL",
-			"name": "Workout Planner | Digital Ocean",
-			"database": "defaultdb",
-			"password": "AVNS_utNfcoxxn5nK7Qcx-kB",
-			"username": "doadmin",
-			"connectString": "mysql://doadmin:AVNS_utNfcoxxn5nK7Qcx-kB@db-mysql-nyc3-35936-do-user-15450315-0.c.db.ondigitalocean.com:25060/defaultdb?ssl-mode=REQUIRED"
-		}
-	],
+	"sqltools.connections": [],
 	"liveServer.settings.port": 5501
 }
