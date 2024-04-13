@@ -1,4 +1,16 @@
 {
-	"sqltools.connections": [],
+	"sqltools.connections": [
+		{
+			"mysqlOptions": {
+				"authProtocol": "default",
+				"enableSsl": "Disabled"
+			},
+			"previewLimit": 50,
+			"server": "localhost",
+			"driver": "MySQL",
+			"name": "Workout Planner - HackSprint",
+			"connectString": "mysql://doadmin:AVNS_utNfcoxxn5nK7Qcx-kB@db-mysql-nyc3-35936-do-user-15450315-0.c.db.ondigitalocean.com:25060/defaultdb?ssl-mode=REQUIRED"
+		}
+	],
 	"liveServer.settings.port": 5501
 }
