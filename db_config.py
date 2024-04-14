@@ -9,7 +9,7 @@ def create_connection():
     # Define database connection details using environment variables
     DB_CONFIG = {
         'host': os.getenv('_self.HOSTNAME'),
-        'port': port,
+        'port': os.getenv('_self.PORT'),
         'username': os.getenv('_self.USERNAME'),
         'password': os.getenv('_self.PASSWORD'),
         'database': os.getenv('_self.DATABASE'),
