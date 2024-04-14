@@ -34,4 +34,4 @@ def add_exercise():
 
 if __name__ == '__main__':
     # Specify the desired host and port here
-    app.run(debug=false, host='0.0.0.0', port=8080)
+    app.run(debug=False, host='0.0.0.0', port=8080)
