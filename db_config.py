@@ -13,7 +13,6 @@ def create_connection():
         'user': os.getenv('_self.USERNAME'),
         'password': os.getenv('_self.PASSWORD'),
         'database': os.getenv('_self.DATABASE'),
-        'database_url': os.getenv('_self.DATABASE_URL'),  # Corrected key name
         'ssl_mode': 'REQUIRED',  # Set SSL mode to 'REQUIRED'
     }
 
