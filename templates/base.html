@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Welcome{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
-    <div class="nav-links">
-        <!-- Links to other pages -->
-        <a href="/">Hello!</a>
-        <a href="/submit-exercise">Submit Exercise</a>
-        <a href="/retrieve-exercise">Retrieve Exercise</a>
-        <a href="/q-and-a">Q & A</a>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{% block title %}Welcome{% endblock %}</title>
+	</head>
+	<body>
+		<div class="nav-links">
+			<!-- Links to other pages -->
+			<a href="/">Hello!</a>
+			<a href="/submit-exercise">Submit Exercise</a>
+			<a href="/retrieve-exercise">Retrieve Exercise</a>
+			<!-- Link to the external wiki -->
+			<a href="{{ wiki_url }}">Wiki</a>
+		</div>
 
-    <main>
-        {% block content %}{% endblock %}
-    </main>
+		<main>{% block content %}{% endblock %}</main>
 
-    <footer>
-        <!-- Footer content -->
-        <p>&copy; 2024 Your Name</p>
-        <h2>Team Members</h2>
-        <p>
-            <a href="https://github.com/ManningStinson">Manning Stinson</a> | 
-            <a href="https://github.com/BrandonMontezuma">Brandon Montezuma</a> | 
-            <a href="https://github.com/KevinVanguard">Kevin Vanguard</a>
-        </p>
-    </footer>
-</body>
+		<footer>
+			<!-- Footer content -->
+			<p>&copy; 2024 Your Name</p>
+			<h2>Team Members</h2>
+			<p>
+				<a href="https://github.com/manningstinson">Manning Stinson</a> |
+				<a href="https://github.com/bmontezuma">Brandon Montezuma</a> |
+				<a href="https://github.com/KVang2">Kevin Vang</a>
+			</p>
+		</footer>
+	</body>
 </html>
