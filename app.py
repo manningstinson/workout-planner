@@ -6,15 +6,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', title='Home | Workout Planner')
 
-@app.route('/submit-exercise')
+@app.route('/submit_exercise')
 def submit_exercise():
-    return submit_exercise_function()
+    return submit_exercise_function(), 200, {'title': 'Submit Exercise'}
 
-@app.route('/retrieve-exercise')
+@app.route('/retrieve_exercise')
 def retrieve_exercise():
-    return retrieve_exercise_function()
+    return retrieve_exercise_function(), 200, {'title': 'Retrieve Exercise'}
 
 if __name__ == '__main__':
     app.run(debug=False, host='0.0.0.0', port=8080)
