@@ -1,44 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Add Exercise</title>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="{{ url_for('static', filename='styles.css') }}"
-		/>
-	</head>
-	<body>
-		<h1>Exercise Form</h1>
-		<form
-			action="/add_exercise"
-			method="POST"
-			style="width: 300px; height: 400px"
-		>
-			<label for="ex_name">Exercise Name:</label><br />
-			<input type="text" id="ex_name" name="ex_name" required /><br /><br />
-
-			<label for="ex_difficulty">Difficulty:</label><br />
-			<select id="ex_difficulty" name="ex_difficulty">
-				<option value="Beginner">Beginner</option>
-				<option value="Intermediate">Intermediate</option>
-				<option value="Advanced">Advanced</option></select
-			><br /><br />
-
-			<label for="ex_type">Type:</label><br />
-			<select id="ex_type" name="ex_type">
-				<option value="Arms">Arms</option>
-				<option value="Legs">Legs</option>
-				<option value="Back">Back</option>
-				<option value="Shoulders">Shoulders</option>
-				<option value="Hips">Hips</option>
-				<option value="Glutes">Glutes</option>
-				<option value="Compound Exercise">Compound Exercise</option></select
-			><br /><br />
-
-			<input type="submit" value="Submit" />
-		</form>
-	</body>
-</html>
+{% extends "base.html" %} {% block title %}Welcome{% endblock %} {% block
+content %}
+<h2>Welcome to Our Exercise App!</h2>
+<p>This is the home page. Feel free to explore.</p>
+{% endblock %}
