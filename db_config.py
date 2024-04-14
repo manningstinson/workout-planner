@@ -8,6 +8,7 @@ DB_CONFIG = {
     'user': os.getenv('_self.USERNAME'),
     'password': os.getenv('_self.PASSWORD'),
     'database': os.getenv('_self.DATABASE'),
+    'database_url': os.getenv('_self.DATABASE_URL'),  # Corrected key name
     'ssl_ca': os.getenv('_self.CA_CERT'),
 }
 
