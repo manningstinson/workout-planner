@@ -10,7 +10,7 @@ def create_connection():
     DB_CONFIG = {
         'host': os.getenv('_self.HOSTNAME'),
         'port': port,
-        'user': os.getenv('_self.USERNAME'),
+        'username': os.getenv('_self.USERNAME'),
         'password': os.getenv('_self.PASSWORD'),
         'database': os.getenv('_self.DATABASE'),
         'ssl_mode': 'REQUIRED',  # Set SSL mode to 'REQUIRED'
