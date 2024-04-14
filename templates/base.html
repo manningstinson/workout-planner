@@ -3,29 +3,23 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Submit Exercise</title>
+		<title>{% block title %}Welcome{% endblock %}</title>
 		<link
 			rel="stylesheet"
 			href="{{ url_for('static', filename='styles.css') }}"
 		/>
 	</head>
 	<body>
-		<!-- Your submit exercise content here -->
-		<div class="submit-exercise-content">
-			<h1>Submit Your Exercise</h1>
-			<p>Here you can submit your exercise.</p>
-			<!-- Add your form or other content for submitting exercise -->
-		</div>
-
-		<!-- Navigation links -->
 		<div class="nav-links">
+			<!-- Links to other pages -->
 			<a href="#">Hello!</a>
-			<a href="/submit-exercise">Submit Exercise</a>
-			<a href="/retrieve-exercise">Retrieve Exercise</a>
+			<a href="/submit">Submit Exercise</a>
+			<a href="/retrieve">Retrieve Exercise</a>
 			<a href="/q-and-a">Q & A</a>
 		</div>
 
-		<!-- Footer -->
+		<main>{% block content %}{% endblock %}</main>
+
 		<footer>
 			<!-- Footer content -->
 			<p>&copy; 2024 Your Name</p>
@@ -33,7 +27,7 @@
 			<p>
 				<a href="https://github.com/manningstinson">Manning Stinson</a> |
 				<a href="https://github.com/bmontezuma">Brandon Montezuma</a> |
-				<a href="https://github.com/Kvang2">Kevin Vang</a>
+				<a href="https://github.com/kvang2">Kevin Vang</a>
 			</p>
 		</footer>
 	</body>
