@@ -1,18 +1,14 @@
-/* styles.css */
+/* Body background color */
 body {
-	background-color: #fdfdfd; /* Set light blue background color */
-	display: flex;
-	justify-content: center; /* Center content horizontally */
-	align-items: center; /* Center content vertically */
-	height: 100vh; /* Full viewport height */
-	margin: 0; /* Remove default margin */
+	background-color: #fdfdfd; /* Light gray background color */
 }
 
-/* Additional CSS for the links */
+/* CSS for navigation links */
 .nav-links {
 	text-align: center;
 	margin-top: 40px;
 }
+
 .nav-links a {
 	margin: 0 20px;
 	font-family: "Open Sans", sans-serif;
@@ -21,3 +17,19 @@ body {
 	text-decoration: none;
 }
 
+/* CSS for footer */
+footer {
+	background-color: #333; /* Dark background color */
+	color: #fff; /* White text color */
+	text-align: center;
+	padding: 20px 0; /* Add padding to the top and bottom */
+}
+
+footer h2 {
+	color: #fff; /* White text color */
+}
+
+footer a {
+	color: #fff; /* White text color for links */
+	text-decoration: underline; /* Add underline to links */
+}
