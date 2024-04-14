@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 from db_config import create_connection  # Import database configuration
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')  # Define static route
 
 # Route to display the form
 @app.route('/')
