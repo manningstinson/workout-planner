@@ -18,17 +18,17 @@
 }
 
 footer {
-	background-color: #333; /* Dark background color */
-	color: #fff; /* White text color */
+	background-color: transparent /* Dark background color */
+	color: #000; /* White text color */
 	text-align: center;
 	padding: 20px 0; /* Add padding to the top and bottom */
 }
 
 footer h2 {
-	color: #fff; /* White text color */
+	color: #000; /* White text color */
 }
 
 footer a {
-	color: #fff; /* White text color for links */
+	color: #000; /* White text color for links */
 	text-decoration: underline; /* Add underline to links */
 }
