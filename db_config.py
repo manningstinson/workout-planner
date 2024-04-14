@@ -1,17 +1,22 @@
 import os
 import mysql.connector
 
-# Define database connection details using environment variables
-DB_CONFIG = {
-    'host': os.getenv('_self.HOSTNAME'),
-    'port': os.getenv('_self.PORT'),
-    'username': os.getenv('_self.USERNAME'),
-    'password': os.getenv('_self.PASSWORD'),
-    'database': os.getenv('_self.DATABASE'),
-    'ssl_mode': 'REQUIRED',  # Set SSL mode to 'REQUIRED'
-}
-
 def create_connection():
+    # Print the value of _self.PORT for debugging
+    port = os.getenv('_self.PORT')
+    print("Port number:", port)
+
+    # Define database connection details using environment variables
+    DB_CONFIG = {
+        'host': os.getenv('_self.HOSTNAME'),
+        'port': port,
+        'user': os.getenv('_self.USERNAME'),
+        'password': os.getenv('_self.PASSWORD'),
+        'database': os.getenv('_self.DATABASE'),
+        'database_url': os.getenv('_self.DATABASE_URL'),  # Corrected key name
+        'ssl_mode': 'REQUIRED',  # Set SSL mode to 'REQUIRED'
+    }
+
     conn = None
     try:
         conn = mysql.connector.connect(**DB_CONFIG)
