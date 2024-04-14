@@ -33,4 +33,5 @@ def add_exercise():
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    # Specify the desired host and port here
+    app.run(debug=false, host='0.0.0.0', port=8080)
