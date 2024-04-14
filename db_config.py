@@ -3,17 +3,18 @@ import mysql.connector
 
 def create_connection():
     # Print the value of _self.PORT for debugging
-    port = os.getenv('_self.PORT')
+    port = os.getenv('workout-planner.PORT')
     print("Port number:", port)
 
     # Define database connection details using environment variables
     DB_CONFIG = {
-        'host': os.getenv('_self.HOSTNAME'),
-        'port': os.getenv('_self.PORT'),
-        'username': os.getenv('_self.USERNAME'),
-        'password': os.getenv('_self.PASSWORD'),
-        'database': os.getenv('_self.DATABASE'),
-        'ssl_mode': 'REQUIRED',  # Set SSL mode to 'REQUIRED'
+        'hostname': os.getenv('workout-planner.HOSTNAME'),
+        'port': os.getenv('workout-planner.PORT'),
+        'username': os.getenv('workout-planner.USERNAME'),
+        'password': os.getenv('workout-planner.PASSWORD'),
+        'database': os.getenv('workout-planner.DATABASE'),
+        'database_url': os.getenv('workout-planner.DATABASE_URL'),  # Add database URL
+        'ca_cert': os.getenv('workout-planner.CA_CERT'),  # Add CA certificate
     }
 
     conn = None
