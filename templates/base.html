@@ -8,12 +8,29 @@
 			rel="stylesheet"
 			href="{{ url_for('static', filename='styles.css') }}"
 		/>
+		<style>
+			/* Additional CSS for the links */
+			.nav-links {
+				text-align: center;
+				margin-top: 40px;
+			}
+			.nav-links a {
+				margin: 0 20px;
+				font-family: "Open Sans", sans-serif;
+				font-weight: bold;
+				color: #ffffff; /* Bright white */
+				text-decoration: none;
+			}
+		</style>
 	</head>
 	<body>
-		<header>
-			<h1>Welcome to My Python Project</h1>
-			<!-- Add any header content here -->
-		</header>
+		<div class="nav-links">
+			<!-- Links to other pages -->
+			<a href="#">Hello!</a>
+			<a href="/submit">Submit Exercise</a>
+			<a href="/retrieve">Retrieve Exercise</a>
+			<a href="/q-and-a">Q & A</a>
+		</div>
 
 		<main>{% block content %}{% endblock %}</main>
 

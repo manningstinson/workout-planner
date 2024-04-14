@@ -1,9 +1,23 @@
 /* styles.css */
 body {
-	background-color: lightblue; /* Set light blue background color */
+	background-color: #fdfdfd; /* Set light blue background color */
 	display: flex;
 	justify-content: center; /* Center content horizontally */
 	align-items: center; /* Center content vertically */
 	height: 100vh; /* Full viewport height */
 	margin: 0; /* Remove default margin */
 }
+
+/* Additional CSS for the links */
+.nav-links {
+	text-align: center;
+	margin-top: 40px;
+}
+.nav-links a {
+	margin: 0 20px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	color: #ffffff; /* Bright white */
+	text-decoration: none;
+}
+
