@@ -1,68 +1,86 @@
 /* Body background color */
 body {
-    background-color: #fdfdfd; /* Light gray background color */
+	background-color: #fdfdfd; /* Light gray background color */
 }
 
 /* CSS for navigation links */
 .nav-links {
-    text-align: center;
-    margin-top: 40px;
+	text-align: center;
+	margin-top: 40px;
 }
 
 .nav-links a {
-    margin: 0 20px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    color: #000; /* Black text color for links */
-    text-decoration: none;
+	margin: 0 20px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	color: #000; /* Black text color for links */
+	text-decoration: none;
 }
 
 /* CSS for footer */
 .footer-container {
-    margin-top: 20px; /* Add some space above the footer */
+	margin-top: 20px; /* Add some space above the footer */
 }
 
 footer {
-    background-color: transparent; /* Dark background color */
-    color: #000; /* Black text color */
-    text-align: center;
-    padding: 20px 0; /* Add padding to the top and bottom */
+	background-color: transparent; /* Dark background color */
+	color: #000; /* Black text color */
+	text-align: center;
+	padding: 20px 0; /* Add padding to the top and bottom */
 }
 
 footer h2 {
-    color: #000; /* Black text color */
+	color: #000; /* Black text color */
 }
 
 footer a {
-    color: #000; /* Black text color for links */
-    text-decoration: underline; /* Add underline to links */
+	color: #000; /* Black text color for links */
+	text-decoration: underline; /* Add underline to links */
 }
 
 /* Exercise Grid */
 .exercise-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 20px; /* Gap between columns */
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* Two equal columns */
+	gap: 20px; /* Gap between columns */
 }
 
 /* Column 1 */
-.column1, .column2 {
-    padding: 20px;
+.column1,
+.column2 {
+	padding: 20px;
 }
 
 /* Container */
 .container {
-    background-color: #f0f0f0; /* Light gray background */
-    padding: 20px;
-    border-radius: 8px;
+	background-color: #f0f0f0; /* Light gray background */
+	padding: 20px;
+	border-radius: 8px;
 }
 
 /* Video, Video Name, Exercise Difficulty, Exercise Description */
-.video, .video-name, .exercise-difficulty, .exercise-description {
-    margin-bottom: 20px;
+.video,
+.video-name,
+.exercise-difficulty,
+.exercise-description {
+	margin-bottom: 20px;
 }
 
 /* Welcome, About the Project, Button */
-.welcome, .about-project, .button {
-    margin-bottom: 20px;
+.welcome,
+.about-project,
+.button {
+	margin-bottom: 20px;
+}
+
+/* CSS for retrieve-exercise.html content */
+.exercise {
+	width: 30%; /* Three columns */
+	display: inline-block;
+	margin: 20px; /* Margin for spacing between columns */
+	padding: 20px; /* Padding for content within columns */
+	vertical-align: top;
+	box-sizing: border-box; /* Include padding and border in the element's total width and height */
+	text-align: center; /* Center text */
+	background-color: #f2f2f2; /* Light gray background color */
 }
