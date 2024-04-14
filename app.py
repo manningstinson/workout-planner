@@ -30,7 +30,7 @@ def add_exercise():
         except mysql.connector.Error as e:
             print("Error adding exercise to the database:", e)
 
-    return redirect(url_for('index'))
+return redirect(url_for('test'))
 
 if __name__ == '__main__':
     # Specify the desired host and port here
