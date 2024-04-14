@@ -8,6 +8,13 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/submit-exercise')
+def submit_exercise():
+    return submit_exercise_function()
+
+@app.route('/retrieve-exercise')
+def retrieve_exercise():
+    return retrieve_exercise_function()
+
 if __name__ == '__main__':
-    # Specify the desired host and port here
     app.run(debug=False, host='0.0.0.0', port=8080)
