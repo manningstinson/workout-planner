@@ -1,45 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>{% block title %}Welcome{% endblock %}</title>
-		<link
-			rel="stylesheet"
-			href="{{ url_for('static', filename='styles.css') }}"
-		/>
-	</head>
-	<body>
-		<div class="nav-links">
-			<!-- Links to other pages -->
-			<a href="https://hammerhead-app-wkltv.ondigitalocean.app/index.html"
-				>Hello!</a
-			>
-			<a
-				href="https://hammerhead-app-wkltv.ondigitalocean.app/submit-exercise.html"
-				>Submit Exercise</a
-			>
-			<a
-				href="https://hammerhead-app-wkltv.ondigitalocean.app/retrieve-exercise.html"
-				>Retrieve Exercise</a
-			>
-			<a href="https://hammerhead-app-wkltv.ondigitalocean.app/q-and-a.html"
-				>Q & A</a
-			>
-		</div>
-
-		<main>{% block content %}{% endblock %}</main>
-
-		<div class="footer-container">
-			<footer>
-				<!-- Footer content -->
-				<p>&copy; 2024</p>
-				<p>
-					<a href="https://github.com/ManningStinson">Manning Stinson</a> |
-					<a href="https://github.com/Bmontezuma">Brandon Montezuma</a> |
-					<a href="https://github.com/KVang2">Kevin Vang</a>
-				</p>
-			</footer>
-		</div>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Exercise</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Your submit exercise content here -->
+    <div class="submit-exercise-content">
+        <h1>Submit Your Exercise</h1>
+        <p>Here you can submit your exercise.</p>
+        <!-- Add your form or other content for submitting exercise -->
+    </div>
+</body>
 </html>
