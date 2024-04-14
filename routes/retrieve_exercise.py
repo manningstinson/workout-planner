@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/retrieve-exercise')
+@app.route('/retrieve_exercise')
 def retrieve_exercise_function():
     # Any necessary logic here
     # For example:

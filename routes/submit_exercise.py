@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/submit-exercise')
+@app.route('/submit_exercise')
 def submit_exercise_function():
     # Any necessary logic here
     # For example:
