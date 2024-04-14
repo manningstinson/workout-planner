@@ -25,10 +25,10 @@ footer {
 }
 
 footer h2 {
-	color: #000 /* White text color */
+	color: #000; /* White text color */
 }
 
 footer a {
-	color: #000/* White text color for links */
+	color: #000; /* Black text color for links */
 	text-decoration: underline; /* Add underline to links */
 }
