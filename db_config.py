@@ -13,9 +13,21 @@ def create_connection():
         'ca_cert': os.getenv('workout-planner.CA_CERT'),
     }
 
+    # Debugging: Print DB_CONFIG
+    print("DB_CONFIG:")
+    for key, value in DB_CONFIG.items():
+        print(f"{key}: {value}")
+
     conn = None
     try:
         conn = mysql.connector.connect(**DB_CONFIG)
     except mysql.connector.Error as e:
         print(e)
     return conn
+
+# Test the connection
+conn = create_connection()
+if conn:
+    print("Connection successful!")
+else:
+    print("Connection failed!")
