@@ -1,3 +1,6 @@
+import os
+import mysql.connector
+
 def create_connection():
     # Print the value of _self.PORT for debugging
     port = os.getenv('workout-planner.PORT')
