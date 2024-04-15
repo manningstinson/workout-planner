@@ -1,6 +1,3 @@
-import os
-import mysql.connector
-
 def create_connection():
     # Print the value of _self.PORT for debugging
     port = os.getenv('workout-planner.PORT')
@@ -9,7 +6,7 @@ def create_connection():
     # Define database connection details using environment variables
     DB_CONFIG = {
         'hostname': os.getenv('workout-planner.HOSTNAME'),
-        'port': os.getenv('workout-planner.PORT'),
+        'port': int(port) if port else None,
         'username': os.getenv('workout-planner.USERNAME'),
         'password': os.getenv('workout-planner.PASSWORD'),
         'database': os.getenv('workout-planner.DATABASE'),
