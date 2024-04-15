@@ -2,5 +2,19 @@
 block content %}
 <h1>Submit Your Exercise</h1>
 <p>Here you can submit your exercise.</p>
-<!-- Add your form or other content for submitting exercise -->
+<form method="post">
+	<label for="ex_name">Exercise Name:</label><br />
+	<input type="text" id="ex_name" name="ex_name" /><br />
+
+	<label for="ex_difficulty">Exercise Difficulty:</label><br />
+	<input type="text" id="ex_difficulty" name="ex_difficulty" /><br />
+
+	<label for="ex_description">Exercise Description:</label><br />
+	<textarea id="ex_description" name="ex_description"></textarea><br />
+
+	<label for="ex_video_url">Video URL:</label><br />
+	<input type="text" id="ex_video_url" name="ex_video_url" /><br />
+
+	<input type="submit" value="Submit" />
+</form>
 {% endblock %}

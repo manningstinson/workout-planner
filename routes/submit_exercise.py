@@ -1,12 +1,32 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from db_config import create_connection
 
 app = Flask(__name__)
 
-@app.route('/submit_exercise')
+@app.route('/submit_exercise', methods=['GET', 'POST'])
 def submit_exercise_function():
-    # Any necessary logic here
-    # For example:
-    # process_form_data()
+    conn = create_connection()
+    cursor = conn.cursor()
+    
+    if request.method == 'POST':
+        ex_name = request.form['ex_name']
+        ex_difficulty = request.form['ex_difficulty']
+        ex_description = request.form['ex_description']
+        ex_video_url = request.form['ex_video_url']
+
+        try:
+            # Insert data into the ex_list table
+            sql = "INSERT INTO ex_list (ex_name, ex_difficulty, ex_description, ex_video_url) VALUES (%s, %s, %s, %s)"
+            cursor.execute(sql, (ex_name, ex_difficulty, ex_description, ex_video_url))
+            conn.commit()
+            return 'Exercise submitted successfully!'
+        except Exception as e:
+            conn.rollback()
+            return 'Error: ' + str(e)
+        finally:
+            cursor.close()
+            conn.close()
+
     return render_template('submit-exercise.html')
 
 if __name__ == '__main__':
