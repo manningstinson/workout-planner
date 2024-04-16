@@ -29,6 +29,6 @@ Character Creation\
 [ADAM](https://www.mixamo.com/#/?page=1&type=Character)
 
 Animations
-[Plank](https://www.mixamo.com/#/?page=1&query=Plank&type=Motion%2CMotionPack)
-[Bicep Curl](https://www.mixamo.com/#/?page=1&query=Bicept+Curl&type=Motion%2CMotionPack)
+[Plank](https://www.mixamo.com/#/?page=1&query=Plank&type=Motion%2CMotionPack)\
+[Bicep Curl](https://www.mixamo.com/#/?page=1&query=Bicept+Curl&type=Motion%2CMotionPack)\
 [Squat](https://www.mixamo.com/#/?page=1&query=Squat&type=Motion%2CMotionPack) 
