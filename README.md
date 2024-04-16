@@ -21,10 +21,36 @@ The submit exercise page will allow a user to submit an exercise that will be ad
 ## Retrieve Exercise 
 The retrieve exercise page will allow a user to retrieve several exercises based on a specific search criteria.
 
+## ***Exercise Animations***
+
+*This was made with the intentions of being another way for people to find the help they need when trying new exercises and methods in weight loss or strength training.*
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [License](#license)
+
+## ***Installation***
+
+### ***Unreal Engine***
+
+To download Unreal Engine please follow the link.
+[Unreal Engine](https://www.unrealengine.com/en-US/free-download/game-development-engine?utm_source=BingSearch&utm_medium=PaidSearch&utm_campaign=pr*UE_sp*UnrealEngine_an*Internal_ct*Google_cn*GameEngine-US_ta*Keywords_pl*LinkClicks_co*US&utm_id=1311718477789983&utm_term=game%20engine&utm_content=554622408&utm_creative=81982458167678)
+
+[Youtube](https://www.youtube.com/) links for videos used.\
+[Plank](https://youtu.be/xtnempgJM_U)\
+[Bicept Curl](https://youtu.be/NrVe2ZAsSj8)\
+[Squat](https://youtu.be/Z80l3gt0dNk)
+
 ## Challenges
 A small sample project was created approximately 2 months ago, and served as a basis for this hacksprint project.  Unfortunately, there were issues with deployment to digital ocean, and difficulty connecting to the database. 
 
-Environment variables were initially setup to mask the database connection details, along with a .gitignore file.  We experienced issues with a Method not found error, when an entry got submitted to the database.  This was the first time working with an external provider, APP engine, and componenets. It is much different than working with a traditional sandbox as each file change can impact the build process. New errors that were encountered were **405 errors which designate a METHOD NOT FOUND or internal service issue**.  This error can be puzzling as it doesn't exactly tell you where the error occured. 
+Environment variables were initially setup to mask the database connection details, along with a .gitignore file.  We experienced issues with a Method not found error, when an entry got submitted to the database.  This was the first time working with an external provider, APP engine, and componenets. 
+
+It is much different than working with a traditional sandbox as each file change can impact the build process. New errors that were encountered were **405 errors which designate a METHOD NOT FOUND or internal service issue**.  This error can be puzzling as it doesn't exactly tell you where the error occured. 
 
 A change in one file, can cause a build to fail so reading, and understanding the runtime logs is important. 
 
