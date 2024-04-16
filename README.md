@@ -7,9 +7,7 @@ This is a low fidelity wireframe/prototype of a workout planner.  It is being de
 - **Templates:** HTML files
 
 ## Initial Concept
-![site-architecture](https://github.com/manningstinson/workout-planner/assets/104523090/0720a264-5a22-4081-a99d-1631f8ae8ee7)
 ![site-architecture](https://github.com/manningstinson/workout-planner/assets/104523090/6fd7c4f5-c16a-438c-80b7-ee02db0fe40f)
-
 
 ## Navigation & Footer
 The project incorporated a base.html file that serves as a template for the header, and footer sections. Each HTML file inherited the navigation from the base.html file
