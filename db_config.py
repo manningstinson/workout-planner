@@ -30,12 +30,3 @@ def close_connection(conn):
         conn.close()
         print("Connection closed.")
 
-# Test the connection (optional)
-if __name__ == "__main__":
-    conn = create_connection()
-    if conn:
-        print("Connection successful!")
-        # Close the connection after testing
-        close_connection(conn)
-    else:
-        print("Connection failed!")
