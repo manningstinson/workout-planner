@@ -41,7 +41,7 @@ To download Unreal Engine please follow the link.
 ## Challenges
 A small sample project was created approximately 2 months ago, and served as a basis for this hacksprint project.  Unfortunately, there were issues with deployment to digital ocean, and difficulty connecting to the database. 
 
-Environment variables were initially setup to mask the database connection details, along with a .gitignore file.  We experienced issues with a Method not found error, when an entry got submitted to the database.  This was the first time working with an external provider, APP engine, and componenets. 
+Environment variables were initially setup to mask the database connection details, along with a .gitignore file.  We experienced issues with a **Method Not Found** error, when an entry got submitted to the database.  This was the first time working with an external provider, APP engine, and components. 
 
 It is much different than working with a traditional sandbox as each file change can impact the build process. New errors that were encountered were 
 
