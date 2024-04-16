@@ -25,7 +25,7 @@ You can access the Of course! Here's the Markdown link for the page:
 [Workout Planner Wiki](https://github.com/manningstinson/workout-planner/wiki) 
 
 ## Demo
-You can access the project here.  This is a development server. It is currently hosted on [DigitalOcean](https://www.digitalocean.com/)
+You can access the project here.  This is a development server. It is currently hosted on [DigitalOcean](https://www.digitalocean.com/).
 
 https://monkfish-app-xq5zg.ondigitalocean.app/
 
