@@ -43,7 +43,7 @@ A small sample project was created approximately 2 months ago, and served as a b
 
 Environment variables were initially setup to mask the database connection details, along with a .gitignore file.  We experienced issues with a **Method Not Found** error, when an entry got submitted to the database.  This was the first time working with an external provider, APP engine, and components. 
 
-It is much different than working with a traditional sandbox as each file change can impact the build process. New errors that were encountered were 
+It is much different than working with a traditional sandbox as each file change can impact the build process. Predominately, we ran into the following errors listed below. 
 
 **405** | **METHOD NOT FOUND** <br>
 A 405 Method Not Allowed error occurs when a client tries to use an HTTP method that is not supported for a specific resource on the server. This can happen due to attempts to use methods like PUT or DELETE on resources that only allow methods like GET or POST. It can also be caused by server configuration restrictions. To resolve this, the client needs to adjust the request to use an allowed method or the server configuration may need to be modified.
