@@ -27,6 +27,7 @@ def submit_exercise_function():
             cursor.close()
             conn.close()
 
+    # If it's a GET request, render the template normally
     return render_template('submit-exercise.html')
 
 if __name__ == '__main__':
