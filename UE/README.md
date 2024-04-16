@@ -24,3 +24,13 @@ To download Unreal Engine please follow the link.
 [Bicept Curl](https://youtu.be/NrVe2ZAsSj8)\
 [Squat](https://youtu.be/Z80l3gt0dNk)
 
+Animations used from [Mixamo](https://www.mixamo.com/#/)
+Character Creation
+[ADAM](https://www.mixamo.com/#/?page=1&type=Character)
+
+Animations
+[Plank](https://www.mixamo.com/#/?page=1&query=Plank&type=Motion%2CMotionPack)
+[Bicep Curl](https://www.mixamo.com/#/?page=1&query=Bicept+Curl&type=Motion%2CMotionPack)
+[Squat](https://www.mixamo.com/#/?page=1&query=Squat&type=Motion%2CMotionPack) 
+### ***Usage***
+
