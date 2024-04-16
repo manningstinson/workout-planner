@@ -7,7 +7,7 @@ def create_connection():
     using the database URL from an environment variable.
     """
     # Get database URL from environment variable
-    db_url = os.getenv('_woplanner.DATABASE_URL')
+    db_url = os.getenv('woplanner.DATABASE_URL')
     
     conn = None
     try:
