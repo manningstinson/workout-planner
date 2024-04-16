@@ -6,7 +6,7 @@ This is a low fidelity wireframe/prototype of a workout planner.  It is being de
 - **Static:** Stylesheets, JS, and IMG directories
 - **Templates:** HTML files
 
-## How to use the Planner
+## Submit Exercise & Retrieve Exercise
 The submit exercise page will allow a user to submit an exercise that will be added to a MySQL database. The Retrieve Exercise will eventually allow a user to retrieve several exercises based on a specific search criteria.
 
 ## Challenges
