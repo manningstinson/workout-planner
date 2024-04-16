@@ -21,11 +21,8 @@ The submit exercise page will allow a user to submit an exercise that will be ad
 ## Retrieve Exercise 
 The retrieve exercise page will allow a user to retrieve several exercises based on a specific search criteria.
 
-## ***Exercise Animations***
-
-*This was made with the intentions of being another way for people to find the help they need when trying new exercises and methods in weight loss or strength training.*
-
-## Table of Contents
+## Exercise Content | Animations 
+*This was made with the intentions of being another way for people to find the help they need when trying new exercises and methods in weight loss or strength 
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -33,9 +30,7 @@ The retrieve exercise page will allow a user to retrieve several exercises based
 - [Contributing](#contributing)
 - [License](#license)
 
-## ***Installation***
-
-### ***Unreal Engine***
+## Using Unreal Engine
 
 To download Unreal Engine please follow the link.
 [Unreal Engine](https://www.unrealengine.com/en-US/free-download/game-development-engine?utm_source=BingSearch&utm_medium=PaidSearch&utm_campaign=pr*UE_sp*UnrealEngine_an*Internal_ct*Google_cn*GameEngine-US_ta*Keywords_pl*LinkClicks_co*US&utm_id=1311718477789983&utm_term=game%20engine&utm_content=554622408&utm_creative=81982458167678)
