@@ -22,8 +22,6 @@ The submit exercise page will allow a user to submit an exercise that will be ad
 The retrieve exercise page will allow a user to retrieve several exercises based on a specific search criteria.
 
 ## Exercise Content | Animations 
-*This was made with the intentions of being another way for people to find the help they need when trying new exercises and methods in weight loss or strength 
-
 [Installation](#installation)<br>
 [Usage](#usage)<br>
 [Documentation](#documentation)<br>
