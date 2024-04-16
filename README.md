@@ -45,7 +45,8 @@ Environment variables were initially setup to mask the database connection detai
 
 It is much different than working with a traditional sandbox as each file change can impact the build process. New errors that were encountered were 
 
-**405 errors - METHOD NOT FOUND & Internal service issue**.   
+**405 errors - METHOD NOT FOUND
+500 Internal Service Errors **.   
 These errors can be puzzling as it doesn't exactly tell you where the error occured. A change in one file, can cause a build to fail so reading, and understanding the runtime logs is important. 
 
 ## Wiki
