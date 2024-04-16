@@ -8,7 +8,7 @@ def create_connection():
     db_config = {
         'host': 'db-mysql-nyc3-35936-do-user-15450315-0.c.db.ondigitalocean.com',
         'user': 'doadmin',
-        'password': AVNS_utNfcoxxn5nK7Qcx-kB',
+        'password': 'AVNS_utNfcoxxn5nK7Qcx-kB',
         'database': 'defaultdb',
         'port': 25060,
         'sslmode': 'REQUIRED'
