@@ -19,7 +19,7 @@ def submit_exercise_function():
             sql = "INSERT INTO ex_list (ex_name, ex_difficulty, ex_description, ex_video_url) VALUES (%s, %s, %s, %s)"
             cursor.execute(sql, (ex_name, ex_difficulty, ex_description, ex_video_url))
             conn.commit()
-            return redirect(url_for('submit_exercise_function'))  # Redirect to the same page after submission
+            return redirect(url_for('submit_success'))  # Redirect to the success page after submission
         except Exception as e:
             conn.rollback()
             return 'Error: ' + str(e)
@@ -29,6 +29,10 @@ def submit_exercise_function():
 
     # If it's a GET request, render the template normally
     return render_template('submit-exercise.html')
+
+@app.route('/submit_success')
+def submit_success():
+    return render_template('submit-success.html')
 
 if __name__ == '__main__':
     app.run(debug=False, host='0.0.0.0', port=8080)
