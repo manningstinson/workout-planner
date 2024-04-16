@@ -21,6 +21,6 @@ You can access the project here.  This is a development server.
 https://monkfish-app-xq5zg.ondigitalocean.app/
 
 ## Authors
-[Manning Stinson](https://github.com/manningstinson)
-[Brandon Montezuma](https://github.com/bmontezuma)
+[Manning Stinson](https://github.com/manningstinson) <br>
+[Brandon Montezuma](https://github.com/bmontezuma) <br>
 [Kevin Vang](https://github.com/kvang2)
