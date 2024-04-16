@@ -9,7 +9,7 @@ This is a low fidelity wireframe/prototype of a workout planner.  It is being de
 ## Navigation & Footer
 The project incorporated a base.html file that serves as a template for the header, and footer sections. Each HTML file inherited the navigation from the base.html file
 
-## Submit Exercise Page
+## Submit Exercise
 The submit exercise page will allow a user to submit an exercise that will be added to a MySQL database. 
 
 ## Retrieve Exercise 
