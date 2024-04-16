@@ -45,10 +45,10 @@ Environment variables were initially setup to mask the database connection detai
 
 It is much different than working with a traditional sandbox as each file change can impact the build process. New errors that were encountered were 
 
-**405** | METHOD NOT FOUND <br>
+**405** | **METHOD NOT FOUND** <br>
 A 405 Method Not Allowed error occurs when a client tries to use an HTTP method that is not supported for a specific resource on the server. This can happen due to attempts to use methods like PUT or DELETE on resources that only allow methods like GET or POST. It can also be caused by server configuration restrictions. To resolve this, the client needs to adjust the request to use an allowed method or the server configuration may need to be modified.
 
-**500**  | Internal Service Errors <br>
+**500**  | **Internal Service Errors** <br>
 A 500 Internal Server Error indicates that something unexpected went wrong on the server-side, preventing it from fulfilling the client's request. This error can result from coding errors, server configuration issues, or resource exhaustion. Server administrators need to investigate server logs to identify and address the specific problem causing the error. Users encountering a 500 error should report it to the website or service administrator, providing any relevant information about the request to assist in troubleshooting.
 
 ## Wiki
