@@ -16,7 +16,9 @@ The submit exercise page will allow a user to submit an exercise that will be ad
 The retrieve exercise page will allow a user to retrieve several exercises based on a specific search criteria.
 
 ## Challenges
-A small sample project was created approximately 2 months ago, and served as a basis for this hacksprint project.  Unfortunately, there were issues with deployment to digital ocean, and difficulty connecting to the database. Environment variables were initially setup to mask the database connection details, along with a .gitignore file.  We experienced issues with a Method not found error, when an entry got submitted to the database.  This was the first time working with an external provider, APP engine, and componenets.  
+A small sample project was created approximately 2 months ago, and served as a basis for this hacksprint project.  Unfortunately, there were issues with deployment to digital ocean, and difficulty connecting to the database. 
+
+Environment variables were initially setup to mask the database connection details, along with a .gitignore file.  We experienced issues with a Method not found error, when an entry got submitted to the database.  This was the first time working with an external provider, APP engine, and componenets.  
 
 ## Wiki
 A wiki is being created to document the development process.  Currently empty, but will added to as the project progresses.
