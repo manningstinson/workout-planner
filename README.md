@@ -1,3 +1,6 @@
+
+![workout-planner-concept](https://github.com/manningstinson/workout-planner/assets/104523090/05b6a497-c456-47f0-a7ea-10e057dd5023)
+
 # Workout Planner
 This is a low fidelity wireframe/prototype of a workout planner.  It is being designed to allow a user to submit an exercise, and retrieve exercises. Currently just black, and white it serves more as a guide to designers, and future developers of the project.  It is very simple on purpose.  
 
