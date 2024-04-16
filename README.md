@@ -24,11 +24,11 @@ The retrieve exercise page will allow a user to retrieve several exercises based
 ## Exercise Content | Animations 
 *This was made with the intentions of being another way for people to find the help they need when trying new exercises and methods in weight loss or strength 
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
-- [License](#license)
+[Installation](#installation)
+[Usage](#usage)
+[Documentation](#documentation)
+[Contributing](#contributing)
+[License](#license)
 
 ## Using Unreal Engine
 
