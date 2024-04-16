@@ -2,7 +2,7 @@
 ![workout-planner-concept](https://github.com/manningstinson/workout-planner/assets/104523090/05b6a497-c456-47f0-a7ea-10e057dd5023)
 
 # Project Focus
-This is a low fidelity wireframe/prototype of a workout planner.  It is being designed to allow a user to submit an exercise, and retrieve exercises. Currently just black, and white it serves more as a guide to designers, and future developers of the project.  It is more to encourage brainstorming than anything else. It is very simple on purpose.  
+This is a low fidelity wireframe/prototype of a workout planner.  It is being designed to allow a user to submit an exercise, and retrieve exercises. Currently just black, and white it serves more as a guide to designers, and future developers of the project.  It is also meant to encourage brainstorming. It is very simple on purpose.  
 
 ## File Structure
 - **Routes:** Python files to retrieve and submit data.
