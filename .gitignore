@@ -1,7 +1,7 @@
-database_config.py
 *.sqlsession
 *.sqls
 Workout Planner | Digital Ocean.session.sql
 ca-certificate.crt
 */__pycache__
 .vscode/
+db_config.py
