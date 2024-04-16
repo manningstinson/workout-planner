@@ -7,10 +7,6 @@
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## ***Installation***
 
@@ -36,5 +32,3 @@ Animations
 [Plank](https://www.mixamo.com/#/?page=1&query=Plank&type=Motion%2CMotionPack)
 [Bicep Curl](https://www.mixamo.com/#/?page=1&query=Bicept+Curl&type=Motion%2CMotionPack)
 [Squat](https://www.mixamo.com/#/?page=1&query=Squat&type=Motion%2CMotionPack) 
-### ***Usage***
-
