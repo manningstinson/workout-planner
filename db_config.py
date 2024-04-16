@@ -11,7 +11,6 @@ def create_connection():
         'password': 'AVNS_utNfcoxxn5nK7Qcx-kB',
         'database': 'defaultdb',
         'port': 25060,
-        'sslmode': 'REQUIRED'
     }
 
     conn = None
