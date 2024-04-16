@@ -4,24 +4,34 @@ import mysql.connector
 def create_connection():
     """
     Establishes a connection to the MySQL database 
-    using a connection string from an environment variable.
+    using the database URL from an environment variable.
     """
-    db_url = os.getenv('workout-planner.DATABASE_URL')  # Get connection string from environment variable
+    # Get database URL from environment variable
+    db_url = os.getenv('_woplanner.DATABASE_URL')
+    
     conn = None
     try:
-        conn = mysql.connector.connect(**db_url)  # Pass connection string as keyword arguments
+        # Connect to the database using the provided URL
+        conn = mysql.connector.connect(db_url)
     except mysql.connector.Error as e:
         print(e)
+    
     return conn
 
-# Test the connection
-conn = create_connection()
-if conn:
-    print("Connection successful!")
-else:
-    print("Connection failed!")
+def close_connection(conn):
+    """
+    Closes the database connection.
+    """
+    if conn:
+        conn.close()
+        print("Connection closed.")
 
-# Close the connection (optional, recommended when connection is no longer needed)
-if conn:
-    conn.close()
-    print("Connection closed.")
+# Test the connection (optional)
+if __name__ == "__main__":
+    conn = create_connection()
+    if conn:
+        print("Connection successful!")
+        # Close the connection after testing
+        close_connection(conn)
+    else:
+        print("Connection failed!")
