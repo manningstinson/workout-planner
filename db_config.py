@@ -7,12 +7,12 @@ def create_connection():
     using the database URL from an environment variable.
     """
     # Get database URL from environment variable
-    db_url = os.getenv('woplanner.DATABASE_URL')
+    db_url = os.getenv('woplanner_database_url')
     
     conn = None
     try:
-        # Connect to the database using the provided URL
-        conn = mysql.connector.connect(db_url)
+        # Connect to the database using the provided connection string
+        conn = mysql.connector.connect(connection_string=db_url)
     except mysql.connector.Error as e:
         print(e)
     
