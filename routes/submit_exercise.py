@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 from db_config import create_connection
 
 app = Flask(__name__)
@@ -19,7 +19,7 @@ def submit_exercise_function():
             sql = "INSERT INTO ex_list (ex_name, ex_difficulty, ex_description, ex_video_url) VALUES (%s, %s, %s, %s)"
             cursor.execute(sql, (ex_name, ex_difficulty, ex_description, ex_video_url))
             conn.commit()
-            return 'Exercise submitted successfully!'
+            return redirect(url_for('submit_exercise_function'))  # Redirect to the same page after submission
         except Exception as e:
             conn.rollback()
             return 'Error: ' + str(e)
