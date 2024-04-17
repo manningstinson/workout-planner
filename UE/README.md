@@ -26,7 +26,7 @@ To download Unreal Engine please follow the link.
 
 ## ***Animations used from*** 
 
- [Mixamo](https://www.mixamo.com/#/)\
+ [Mixamo](https://www.mixamo.com/#/)
 
 ## ***Character Creation***
 
