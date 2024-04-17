@@ -2,7 +2,6 @@ import logging
 from flask import Flask, render_template
 from routes.submit_exercise import submit_exercise_function
 from routes.retrieve_exercise import retrieve_exercise_function
-from db_config import create_connection  # Import the database configuration
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
