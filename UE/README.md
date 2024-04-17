@@ -9,6 +9,9 @@
  - User Engagement Frameworks
  - Workout Tutorial
 
+# Process:
+- Objective: To promote a better lifestyle, we created a prototype workout planner to help user customized their fitness workouts and set a goal.
+
 ## Table of Contents
 
 - [Installation](#installation)
