@@ -12,7 +12,8 @@
 ## Process:
 - Objective: To promote a better lifestyle, we created a prototype workout planner to help user customized their fitness workouts and set a goal.
 
-## Functionality: Prototype takes the users input, then it retrieve informations from the database to display for the user to use. It also gives them an idea on organizing a workout plan.
+### Functionality:
+- Prototype takes the users input, then it retrieve informations from the database to display for the user to use. It also gives them an idea on organizing a workout plan.
 
 ## Table of Contents
 
