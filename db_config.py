@@ -1,22 +1,17 @@
+import os
 import mysql.connector
 
 def create_connection():
     """
-    Establishes a connection to the MySQL database using individual connection parameters.
+    Establishes a connection to the MySQL database 
+    using a connection string and environment variables.
     """
-    # Database connection parameters
-    db_config = {
-        'host': 'db-mysql-nyc3-35936-do-user-15450315-0.c.db.ondigitalocean.com',
-        'user': 'doadmin',
-        'password': 'AVNS_utNfcoxxn5nK7Qcx-kB',
-        'database': 'defaultdb',
-        'port': 25060,
-    }
+    connection_string = os.getenv("workoutplanner.DATABASE_URL")
 
     conn = None
     try:
-        # Connect to the database using the provided parameters
-        conn = mysql.connector.connect(**db_config)
+        # Connect to the database using the provided connection string
+        conn = mysql.connector.connect(connection_string)
     except mysql.connector.Error as e:
         print(e)
 
@@ -30,3 +25,6 @@ def close_connection(conn):
         conn.close()
         print("Connection closed.")
 
+# Add Flask Cors to requirements.txt
+with open('requirements.txt', 'a') as file:
+    file.write("Flask-Cors>=1.0.0\n")
