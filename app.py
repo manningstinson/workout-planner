@@ -1,6 +1,10 @@
+import logging
 from flask import Flask, render_template
 from routes.submit_exercise import submit_exercise_function
 from routes.retrieve_exercise import retrieve_exercise_function
+
+# Configure logging
+logging.basicConfig(level=logging.DEBUG)
 
 app = Flask(__name__)
 
@@ -10,11 +14,19 @@ def index():
 
 @app.route('/submit_exercise')
 def submit_exercise():
-    return submit_exercise_function()
+    try:
+        return submit_exercise_function()
+    except Exception as e:
+        logging.error(f"Error submitting exercise: {e}")
+        return render_template('error.html')
 
 @app.route('/retrieve_exercise')
 def retrieve_exercise():
-    return retrieve_exercise_function()
+    try:
+        return retrieve_exercise_function()
+    except Exception as e:
+        logging.error(f"Error retrieving exercise: {e}")
+        return render_template('error.html')
 
 if __name__ == '__main__':
     app.run(debug=False, host='0.0.0.0', port=8080)

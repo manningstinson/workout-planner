@@ -12,6 +12,7 @@ def create_connection():
     try:
         # Connect to the database using the provided connection string
         conn = mysql.connector.connect(host=connection_string)
+        print("Connected to the database successfully.")
     except mysql.connector.Error as e:
         print("Error connecting to the database:", e)
 

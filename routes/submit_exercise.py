@@ -1,38 +1,26 @@
-from flask import Flask, render_template, request, redirect, url_for
-from db_config import create_connection  # Import create_connection function from db_config
+from flask import request, redirect, url_for, render_template
+from db_config import create_connection
 
-app = Flask(__name__)
-
-@app.route('/submit_exercise', methods=['GET', 'POST'])
 def submit_exercise_function():
-    conn = create_connection()  # Use create_connection function to establish the database connection
-    cursor = conn.cursor()
-    
-    if request.method == 'POST':
-        ex_name = request.form['ex_name']
-        ex_difficulty = request.form['ex_difficulty']
-        ex_description = request.form['ex_description']
-        ex_video_url = request.form['ex_video_url']
-
+    conn = create_connection()
+    if conn:
         try:
-            # Insert data into the ex_list table
-            sql = "INSERT INTO ex_list (ex_name, ex_difficulty, ex_description, ex_video_url) VALUES (%s, %s, %s, %s)"
-            cursor.execute(sql, (ex_name, ex_difficulty, ex_description, ex_video_url))
-            conn.commit()
-            return redirect(url_for('submit_success'))  # Redirect to the success page after submission
+            cursor = conn.cursor()
+            if request.method == 'POST':
+                ex_name = request.form['ex_name']
+                ex_difficulty = request.form['ex_difficulty']
+                ex_description = request.form['ex_description']
+                ex_video_url = request.form['ex_video_url']
+
+                # Insert data into the ex_list table
+                sql = "INSERT INTO ex_list (ex_name, ex_difficulty, ex_description, ex_video_url) VALUES (%s, %s, %s, %s)"
+                cursor.execute(sql, (ex_name, ex_difficulty, ex_description, ex_video_url))
+                conn.commit()
+                return redirect(url_for('submit_success'))  # Redirect to the success page after submission
         except Exception as e:
             conn.rollback()
-            return 'Error: ' + str(e)
+            print('Error: ', e)
         finally:
             cursor.close()
             conn.close()
-
-    # If it's a GET request, render the template normally
     return render_template('submit-exercise.html')
-
-@app.route('/submit_success')
-def submit_success():
-    return render_template('submit-success.html')
-
-if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0', port=8080)
