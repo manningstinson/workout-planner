@@ -14,7 +14,10 @@ It specifies the commands needed to run different parts of the application, such
 
 `web: python app.py`
 
+## requirements.txt
+The requirements.txt file is a text file commonly used in Python projects to list all the external dependencies required by the project. Each line in the file typically specifies a package name and optionally a version number. This file helps in managing project dependencies by providing a simple way to install all required packages using tools like pip.
 
+This file was required to deploy the application on Digital Ocean. 
 
 # Initial Concept
 ![site-architecture](https://github.com/manningstinson/workout-planner/assets/104523090/6fd7c4f5-c16a-438c-80b7-ee02db0fe40f)
