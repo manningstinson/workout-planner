@@ -51,7 +51,7 @@ To download Unreal Engine please follow the link.
 ## Challenges
 A small sample project was created approximately 2 months ago, and served as a basis for this hacksprint project.  Unfortunately, there were issues with deployment to digital ocean, and difficulty connecting to the database. 
 
-Environment variables were initially setup to mask the database connection details, along with a .gitignore file.  We experienced issues with a **Method Not Found** error, when an entry got submitted to the database.  This was the first time working with an external provider, APP engine, and components. 
+Environment variables were initially setup to mask the database connection details, along with a .gitignore file.  We experienced issues with a **Method Not Found** error, when an entry got submitted to the database.  This was the first time working with an external provider, APP engine, and components. After further research, it was discovered that Flask Cors had not been added to the requirements.txt file, so the required dependencies were not loaded at build time. 
 
 It is much different than working with a traditional sandbox as each file change can impact the build process. Predominately, we ran into the following errors listed below. 
 
@@ -60,6 +60,8 @@ A 405 Method Not Allowed error occurs when a client tries to use an HTTP method 
 
 **500**  | **Internal Service Errors** <br>
 A 500 Internal Server Error indicates that something unexpected went wrong on the server-side, preventing it from fulfilling the client's request. This error can result from coding errors, server configuration issues, or resource exhaustion. Server administrators need to investigate server logs to identify and address the specific problem causing the error. Users encountering a 500 error should report it to the website or service administrator, providing any relevant information about the request to assist in troubleshooting.
+
+These challenges presented an opportunity to learn how to check the run-time logs, and further understand error reporting, and debugging needs.  Every server, and app environment is different.
 
 ## Wiki
 A wiki is being created to document the development process.  Currently empty, but will added to as the project progresses.
