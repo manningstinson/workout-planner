@@ -4,41 +4,41 @@
 # Project Focus
 This is a low fidelity wireframe/prototype of a workout planner.  It is being designed to allow a user to submit an exercise, and retrieve exercises. Currently just black, and white it serves more as a guide to designers, and future developers of the project.  It is also meant to encourage brainstorming, and was kept very simple on purpose.  
 
-# File Structure
+## File Structure
 - **Routes:** Python files to retrieve and submit data.
 - **Static:** Stylesheets, JS, and IMG directories
 - **Templates:** HTML files
 
-## Procfile
+### Procfile
 It specifies the commands needed to run different parts of the application, such as the web server, background workers, or other processes. This file helps define the application’s process types and how they should be executed within the deployment environment.
 
 `web: python app.py`
 
-## requirements.txt
+### requirements.txt
 The requirements.txt file is a text file commonly used in Python projects to list all the external dependencies required by the project. Each line in the file typically specifies a package name and optionally a version number. This file helps in managing project dependencies by providing a simple way to install all required packages using tools like pip.
 
 This file was required to deploy the application on Digital Ocean. 
 
-# Initial Concept
+## Initial Concept
 ![site-architecture](https://github.com/manningstinson/workout-planner/assets/104523090/6fd7c4f5-c16a-438c-80b7-ee02db0fe40f)
 
-## Navigation & Footer
+### Navigation & Footer
 The project incorporated a base.html file that serves as a template for the header, and footer sections. Each HTML file inherited the navigation from the base.html file. 
 
-## Submit Exercise
+### Submit Exercise
 The submit exercise page will allow a user to submit an exercise that will be added to a MySQL database. 
 
-## Retrieve Exercise 
+### Retrieve Exercise 
 The retrieve exercise page will allow a user to retrieve several exercises based on a specific search criteria.
 
-## Assets | Exercise Content 
+### Assets | Exercise Content 
 [Installation](#installation)<br>
 [Usage](#usage)<br>
 [Documentation](#documentation)<br>
 [Contributing](#contributing)<br>
 [License](#license)<br>
 
-## Using Unreal Engine
+### Using Unreal Engine
 
 To download Unreal Engine please follow the link.
 [Unreal Engine](https://www.unrealengine.com/en-US/free-download/game-development-engine?utm_source=BingSearch&utm_medium=PaidSearch&utm_campaign=pr*UE_sp*UnrealEngine_an*Internal_ct*Google_cn*GameEngine-US_ta*Keywords_pl*LinkClicks_co*US&utm_id=1311718477789983&utm_term=game%20engine&utm_content=554622408&utm_creative=81982458167678)
