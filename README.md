@@ -9,6 +9,11 @@ This is a low fidelity wireframe/prototype of a workout planner.  It is being de
 - **Static:** Stylesheets, JS, and IMG directories
 - **Templates:** HTML files
 
+## Procfile
+It specifies the commands needed to run different parts of the application, such as the web server, background workers, or other processes. This file helps define the application’s process types and how they should be executed within the deployment environment.
+
+`web: python app.py`
+
 ## Initial Concept
 ![site-architecture](https://github.com/manningstinson/workout-planner/assets/104523090/6fd7c4f5-c16a-438c-80b7-ee02db0fe40f)
 
