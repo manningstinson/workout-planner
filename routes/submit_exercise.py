@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request, redirect, url_for
-from db_config import create_connection
+from db_config import create_connection  # Import create_connection function from db_config
 
 app = Flask(__name__)
 
 @app.route('/submit_exercise', methods=['GET', 'POST'])
 def submit_exercise_function():
-    conn = create_connection()
+    conn = create_connection()  # Use create_connection function to establish the database connection
     cursor = conn.cursor()
     
     if request.method == 'POST':
