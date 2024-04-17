@@ -15,6 +15,10 @@
 ### Functionality:
 - Prototype takes the users input, then it retrieve informations from the database to display for the user to use. It also gives them an idea on organizing a workout plan.
 
+## Inspiration:
+- Finding a better way to plan and track workouts.
+- Building a structure, personal growth for wellness and health.
+
 ## Table of Contents
 
 - [Installation](#installation)
