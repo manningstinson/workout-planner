@@ -21,7 +21,7 @@ The submit exercise page will allow a user to submit an exercise that will be ad
 ## Retrieve Exercise 
 The retrieve exercise page will allow a user to retrieve several exercises based on a specific search criteria.
 
-## Exercise Content | Animations 
+## Assets | Exercise Content 
 [Installation](#installation)<br>
 [Usage](#usage)<br>
 [Documentation](#documentation)<br>
