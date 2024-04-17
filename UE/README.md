@@ -4,6 +4,21 @@
 
 *This was made with the intentions of being another way for people to find the help they need when trying new exercises and methods in weight loss or strength training.*
 
+## Framework:
+ - Fitness Programming Models
+ - User Engagement Frameworks
+ - Workout Tutorial
+
+## Process:
+- Objective: To promote a better lifestyle, we created a prototype workout planner to help user customized their fitness workouts and set a goal.
+
+### Functionality:
+- Prototype takes the users input, then it retrieve informations from the database to display for the user to use. It also gives them an idea on organizing a workout plan.
+
+## Inspiration:
+- Finding a better way to plan and track workouts.
+- Building a structure, personal growth for wellness and health.
+
 ## Table of Contents
 
 - [Installation](#installation)
