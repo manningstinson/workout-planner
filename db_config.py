@@ -1,20 +1,24 @@
-import os
 import mysql.connector
 
 def create_connection():
     """
-    Establishes a connection to the MySQL database 
-    using a connection string and environment variables.
+    Establishes a connection to the MySQL database using individual connection parameters.
     """
-    # Get the database connection string from the environment variable
-    connection_string = os.getenv("workoutplanner.DATABASE_URL")
+    # Database connection parameters
+    db_config = {
+        'host': 'db-mysql-nyc3-35936-do-user-15450315-0.c.db.ondigitalocean.com',
+        'user': 'doadmin',
+        'password': 'AVNS_utNfcoxxn5nK7Qcx-kB',
+        'database': 'defaultdb',
+        'port': 25060,
+    }
 
     conn = None
     try:
-        # Connect to the database using the provided connection string
-        conn = mysql.connector.connect(host=connection_string)
+        # Connect to the database using the provided parameters
+        conn = mysql.connector.connect(**db_config)
     except mysql.connector.Error as e:
-        print(f"Error connecting to the database: {e}")
+        print(e)
 
     return conn
 
